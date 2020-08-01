@@ -45,3 +45,22 @@
         animation-fill-mode: backwards;
     }
 }
+
+.btn-text {
+    &:link, &:visited {
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: .3rem;
+        font-size: 1.6rem;
+    }
+
+    &:hover {
+
+    }
+
+    &:active {
+
+    }
+}
