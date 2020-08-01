@@ -45,7 +45,7 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
-  /*font-size: 1.6rem;*/ }
+  /*font-size: $default-font-size;*/ }
 
 .heading-primary {
   color: #fff;
