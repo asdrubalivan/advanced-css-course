@@ -6,6 +6,19 @@
     left: 0;
     background-color: rgba($color-black, .8);
     z-index: 4000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
 
     &__content {
         @include absCenter;
@@ -16,6 +29,9 @@
         border-radius: .3rem;
         display: table;
         overflow: hidden;
+        opacity: 0;
+        transition: all .4s .2s;
+        transform: translate(-50%, -50%) scale(0.5);
     }
 
     &__left {
@@ -43,5 +59,21 @@
         column-gap: 4rem; 
         column-rule: .1rem solid $color-gray-light-2;
         hyphens: auto;
+    }
+
+    &__close {
+        &, &:link, &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 1;
+        }
+        &:hover {
+            color: $color-primary;
+        }
     }
 }
