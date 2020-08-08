@@ -98,6 +98,10 @@
             text-decoration: none;
             display: inline-block;
             line-height: 1;
+            @include respond(tab-port) {
+                top: 4rem;
+                right: 4rem;
+            }
         }
         &:hover {
             color: $color-primary;
