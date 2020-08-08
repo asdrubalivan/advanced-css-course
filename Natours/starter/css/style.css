@@ -660,7 +660,8 @@ body {
     @media (max-width: 56.25em) {
       .popup__right {
         width: 100%;
-        display: block; } }
+        display: block;
+        padding: 2rem 1rem; } }
   .popup__img {
     display: block;
     width: 100%; }
