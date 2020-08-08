@@ -651,7 +651,7 @@ body {
       .popup__left {
         width: 100%;
         display: inline-block;
-        padding: 5rem; } }
+        padding: 0 5rem; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
