@@ -13,6 +13,7 @@
     &:target {
         opacity: 1;
         visibility: visible;
+        overflow: scroll;
     }
 
     &:target &__content {
